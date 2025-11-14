@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>GraphQL API Documentation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 2rem; line-height: 1.5; color: #111; }
+    h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.4rem; margin-top: 1.2rem; }
+    pre, code { background:#f6f8fa; padding: 0.15rem 0.35rem; border-radius:4px; }
+    .type { margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid #eee; }
+    .arg { margin-left: 1rem; }
+    nav { position: fixed; right: 1rem; top: 1rem; max-width: 220px; border-left: 1px solid #eee; padding-left: 0.5rem; }
+    main { max-width: 900px; }
+    @media (max-width: 900px) { nav { display:none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <strong>Types</strong>
+    <ul>
+      
+      <li><a href="#Query">Query</a></li>
+      
+      <li><a href="#User">User</a></li>
+      
+      <li><a href="#UserRole">UserRole</a></li>
+      
+      <li><a href="#Post">Post</a></li>
+      
+    </ul>
+  </nav>
+  <main>
+    <h1>GraphQL API Documentation</h1>
+    
+    <section id="Query" class="type">
+      <h2>Query</h2>
+      <p>Root query type</p>
+      
+        <h3>Fields</h3>
+        <ul>
+        
+          <li><strong>user</strong>: <code>User</code>
+            <div>Get a user by ID</div>
+            
+              <div class="arg"><em>Arguments:</em>
+                <ul>
+                  
+                    <li><strong>id</strong>: <code>ID!</code></li>
+                  
+                </ul>
+              </div>
+            
+          </li>
+        
+          <li><strong>posts</strong>: <code>[Post]</code>
+            <div>List all posts</div>
+            
+          </li>
+        
+        </ul>
+      
+      
+    </section>
+    
+    <section id="User" class="type">
+      <h2>User</h2>
+      <p>A user in the system</p>
+      
+        <h3>Fields</h3>
+        <ul>
+        
+          <li><strong>id</strong>: <code>ID</code>
+            <div>Unique ID</div>
+            
+          </li>
+        
+          <li><strong>name</strong>: <code>String</code>
+            <div>Full name</div>
+            
+          </li>
+        
+          <li><strong>role</strong>: <code>UserRole</code>
+            <div>User role</div>
+            
+          </li>
+        
+        </ul>
+      
+      
+    </section>
+    
+    <section id="UserRole" class="type">
+      <h2>UserRole</h2>
+      <p>Available user roles</p>
+      
+      
+        <h3>Enum Values</h3>
+        <ul>
+          
+            <li><code>ADMIN</code> — Administrator user</li>
+          
+            <li><code>NORMAL</code> — Regular user</li>
+          
+        </ul>
+      
+    </section>
+    
+    <section id="Post" class="type">
+      <h2>Post</h2>
+      <p>A post in the system</p>
+      
+        <h3>Fields</h3>
+        <ul>
+        
+          <li><strong>id</strong>: <code>ID</code>
+            
+            
+          </li>
+        
+          <li><strong>title</strong>: <code>String</code>
+            
+            
+          </li>
+        
+          <li><strong>content</strong>: <code>String</code>
+            
+            
+          </li>
+        
+        </ul>
+      
+      
+    </section>
+    
+  </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: graphql-doc-gen
+Version: 0.1.0
+Summary: CLI: generate Markdown/HTML/PDF docs from a GraphQL introspection JSON
+Author-email: Aadhie <aadhiesec@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: jinja2>=3.0
+Provides-Extra: pdf
+Requires-Dist: weasyprint>=57.0; extra == "pdf"
+
+# graphql-doc-gen
+
+CLI to generate Markdown/HTML/PDF docs from GraphQL introspection JSON.
+
+## Install (local)
+```bash
+git clone <repo>
+cd graphql-doc-gen
+pip install .
