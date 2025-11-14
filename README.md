@@ -6,6 +6,6 @@ CLI to generate Markdown/HTML/PDF docs from GraphQL introspection JSON.
 ```bash
 git clone https://github.com/Aadhiesec1/graphql-doc-gen
 cd graphql-doc-gen
-pip install .
+pip install .```
 
 ## Project still in development - PDF Works Undergoing!!!
